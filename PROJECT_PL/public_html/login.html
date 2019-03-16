@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            body{
+    margin:0;
+    padding:0;
+    font-family:'Arial';
+    /*background-image:url("login.jpg");*/
+}
+
+.wrap h2 {
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.wrap{
+    width:410px;
+    overflow:hidden;
+    margin:auto;
+    margin-top:150px;
+    padding:20px;
+    background:#fff;
+    border:1px solid silver;
+    border-radius:5px;
+}
+
+.wrap input{
+    width:400px;
+    height:35px;
+    margin-bottom:10px;
+    border-radius:3px;
+    border:1px solid silver;
+    padding:10px;
+}
+
+.wrap .btn-login{
+    padding:5px;
+    width:412px;
+    height:40px;
+    background-color:darkslategray;
+    color:#fff;
+    border-radius:3px;
+    border:0;
+    font-size:18px;
+}
+
+.error{
+  color: red;  
+}
+
+body{
+    font:15px/1.5 Arial,Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    /*background-color:#f4f4f4;*/
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    }
+    
+    ul{
+        margin:0;
+        padding:0;
+    }
+    
+    .button_1{
+        height:38px;
+        background:#a8491d;
+        border:0;
+        padding-left:20px;
+        padding-right:20px;
+        color:#ffffff;
+   
+    }
+    
+    /*.dark{
+        padding:15px;
+        /*background:#35424a;*/
+       /* color:#ffffff;
+        margin-top:10px;
+        margin-bottom:10px; 
+    }*/
+    header{
+        /*background:#35424a;*/
+        color:#ffffff;
+        padding-top:30px;
+        min-height:70px;
+        border-bottom:#a8491d 3px solid;
+        
+    }
+
+    header a{
+        /*color:#ffffff;*/
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:16px;
+    }
+    
+    
+    header li{
+        float:left;
+        display:inline;
+        padding:0 20px 0 20px;
+    }
+    
+    header #branding{
+        float:left;
+    }
+    
+    header #branding h1{
+        margin:0;
+    }
+    
+    header nav{
+        float:right;
+        margin-top:10px;
+    }
+    
+    header .highlight, header .current a{
+        /*color:#a8491d;*/
+        font-weight:bold;
+    }
+    
+    header a:hover{
+        color:#cccccc;
+        font-weight:bold;
+    }
+    
+    #showcase{
+        min-height:400px;
+       /* background:url('event.jpg')no-repeat 0 400px;*/
+        text-align:center;
+        color:#ffffff;
+        
+    }
+    
+    #showcase h1{
+        margin-top:100px;
+        font-size:55px;
+        margin-bottom:10px;
+        
+    }
+    
+    #showcase p{
+        font-size:20px;
+        
+    }
+    
+    
+    #boxes{
+        margin-top:20px;
+        
+    }
+    
+    #boxes .box{
+        float:left;
+        text-align:center;
+        width:30%;
+        padding:10px;
+    }
+    
+    #boxes .box img{
+        width:90px;
+        
+    }
+    
+    aside#sidebar{
+        float:right;
+        width:30%;
+        margin-top:10px;
+    }
+    
+    aside#sidebar .quote input, aside#sidebar .quote textarea
+    {
+        width:90%;
+        padding:5px;
+        
+    }
+    
+    article#main-col{
+        float:left;
+        width:65%;
+    }
+    
+    ul#services li{
+        list-style:none;
+        padding:20px;
+        border:#cccccc solid 1px;
+        margin-bottom:5px;
+        background:white;
+    }
+    footer{
+        padding:20px;
+        margin-top:20px;
+        color:#ffffff;
+        background-color:#a8491d;
+        text-align:center;
+    }
+    
+    @media(max-width:768px){
+        
+        header#branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        #newsletter form
+        #boxes .box,
+        article#main-col
+        aside#sidebar{
+            float:none;
+            text-align: center;
+            width:100%;
+        }
+        
+     header{
+            padding-bottom: 20px;
+        }
+        
+        #showcase h1{
+            margin-top:40px;
+        }
+        
+        
+          }
+
+
+        </style>
+        <title>Login Page</title>
+ <link rel="stylesheet" href="style.css">
+           </head>
+    <body>
+        
+        <header>
+                <div id="branding">
+                    <h1><span class="highlight"> Event </span> Management </h1>
+                    </div>
+                <nav>
+                    <ul>
+                        <li class="current"> <a href="login.html">Login</a></li>
+                        <li> <a href="signup.html">Sign Up</a></li>
+
+                        <li> <a href="home.html">Home</a></li>
+                        <!--<li> <a href="about.html">About Us</a></li>
+                        <li> <a href="events.html">Events</a></li>
+                        <li> <a href="eventreg.html">Register</a></li>
+                        <li> <a href="gallery.html">Gallery</a></li>
+                        <li> <a href="services.html">Services</a></li>
+                        <li> <a href="contact.html">Feedback</a></li>-->
+
+
+
+
+                       
+                    </ul>
+                </nav>
+               </header>
+        
+        
+        
+        <div class="wrap">
+            <h2> Login Form </h2>
+            
+            <input type="text" id="username" placeholder="username" pattern="[A-Za-z0-9]{5,35}" required>
+            <span class="error" id="err"> </span>
+            <input type="password" id="password" placeholder="password" pattern="[0-9]{1,20}" required>
+            <span class="error" id="err1"> </span>
+            <input type="submit" class="btn-login" id="submit" value="Login" name="submit">
+         
+
+        </div>
+        <script>
+           
+        var btn=document.getElementById('submit');
+        btn.onclick=function(e){
+            check_validation();
+        };
+        function check_validation()
+        {
+	var username=document.getElementById('username');
+	var password=document.getElementById('password');
+	if(username.checkValidity)
+	{
+	document.getElementById("err").innerHTML=username.validationMessage;
+
+	}
+    if(username.patternMismatch)
+	{
+	document.getElementById("err").innerHTML=username.validationMessage;
+    if(username.validationMessage.toString().length!=0)
+                check=0;
+            if(check==0)
+                {
+                    return false;
+                }
+            else{
+                return true;
+            }
+       
+	}
+            
+    if(password.checkValidity)
+	{
+	document.getElementById("err1").innerHTML = password.validationMessage;
+	}
+    if(password.patternMismatch)
+	{
+	document.getElementById("err1").innerHTML = password.validationMessage;
+        if(password.validationMessage.toString().length!=0)
+                check=0;
+            if(check==0)
+                {
+                    return false;
+                }
+            else{
+                return true;
+            }
+   
+	}
+       
+            
+};
+</script>
+
+    </body>
+</html>

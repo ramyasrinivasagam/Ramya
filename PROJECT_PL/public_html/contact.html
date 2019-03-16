@@ -1,0 +1,314 @@
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+   /* header{
+width:100%;
+float:left;
+position:fixed;
+top:0px;
+left:0px;
+background-color:#ffe6f7;
+box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}*/
+a{
+background-color:Transparent;
+color:black;
+font-family:Lucida Sans Unicode;
+font-size:24px;
+text-align:left;
+text-decoration: none;
+display:inline-block;
+padding:15px;
+}
+img{
+width:30%;
+border-radius:50%;
+margin-left:20px;
+}
+.buttonleft{
+padding-top:20px;
+float:right;
+}
+body{
+background-image: url("bride.jpg"); 
+}
+section{
+	/*background-image: url("event2.jpg"); */
+        background-color: burlywood;
+box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:10%;
+	padding:16px 32px;
+	border-radius:5%;
+	min-height:600px;
+	}
+	.p_d0{	
+	Font-Size:36px;
+	float:center;	
+	text-align:center;
+	font-weight:bold;
+	}
+	.p_d1{	
+	Font-Size:28px;	
+	text-align:left;
+	}
+.p_d2{	
+	Font-Size:18px!important;	
+	}
+.p_d3{
+    font-size: 24px!important;
+    text-align: center;
+}
+	table{	
+	Font-Size:24px;
+	text-align:center;
+	font-family:Lucida Sans Unicode;
+	margin-top:10%;
+        min-width: 50%;
+	}
+
+	.a_sub{
+background-color:Transparent;
+color:black;
+font-family:Lucida Sans Unicode;
+font-size:24px;
+text-align:left;
+text-decoration: none;
+display:inline-block;
+padding:5px;
+border-radius:15%;
+}
+.logintext{	
+	Font-Size:20px!important;
+	float:center;
+	margin-left:10%;
+	text-align:center;
+	}
+	.errormessage{
+		color:red;
+		font-size:20px;
+        float:right!important;
+	}
+select{
+    width: 50%;
+}
+
+.button{
+    
+    padding:5px;
+    width:412px;
+    height:40px;
+    border-radius:3px;
+    border:0;
+    font-size:18px;
+    align:center;
+}
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.color{
+    color:red;
+}
+</style>
+<body>
+     <header>
+                <div id="branding">
+                    <h1><span class="highlight"> Event</span> Management </h1>
+                    </div>
+                <nav>
+                    <ul>
+                       <a href="admin_login.html">Admin</a>
+<a href="home.html">Home</a> 
+<a href="about.html">About Us</a> 
+<a href="events.html">Events</a> 
+<a href="eventreg.html">Register</a> 
+  <a href="gallery.html">Gallery</a> 
+    <a href="services.html">Services</a>  
+    <a href="contact.html">Feedback</a>  
+    <a href="home.html">Logout</a>  
+
+
+                       
+                    </ul>
+                </nav>
+                
+               </header>
+        
+	
+<section>
+    <form action="">
+            <h1 class="c1" align="center"> Feedback Form </h1> <br>
+        
+           <div align="center" id="color">
+                <label><b>Username:</b> &nbsp;&nbsp;</label>
+                <input type="text" placeholder="Username" id="username" name="username" pattern="[A-Za-z]{1,35}" required/>
+                <span class="color" id="err"> </span>
+            </div>
+            <br>
+        
+        
+        <div align="center" id="color">
+                <label><b>Mail Id:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="email" placeholder="mail" id="mail" name="mail" required />
+                            <span class="color" id="error"> </span>
+
+            </div>
+            <br>
+            
+        
+            <div align="center" id="color">
+                <label><b>Gender:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="text" placeholder="Gender" id="gender" name="gender" pattern="[a-z]{1,10}" required />
+                            <span class="color" id="err1"> </span>
+
+            </div>
+            <br>
+            <div align="center" id="color">
+                <label><b>Age:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="text" placeholder="Age" id="age" name="age" pattern="[0-9]{1,5}" required/>
+                            <span class="color" id="err2"> </span>
+
+            </div>
+            <br>
+            
+            <div align="center" id="color">
+                <label><b>Country:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="text" placeholder="Country" id="country" name="country" pattern="[a-z]{1,20}" required />
+                            <span class="color" id="err3"> </span>
+
+            </div>
+            <br>
+            
+            <div align="center" id="color">
+                <label><b>Feedback:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Feedback" id="feedback" name="feedback" pattern="[a-z]{1,20}" required />
+
+                <span class="color" id="err4"> </span>
+                <br>
+                <br>
+                </label>
+                </div>
+            
+            
+            
+            <div align="center" id="color">
+                <input type="submit" id="submit" name="submit" value="Submit" />
+                
+            </div>
+                
+                 <div align="center" id="color">
+                <input type="submit" id="delete" name="delete" value="delete" formnovalidate />
+                
+            </div>
+           
+                <div align="center" id="color">
+                <input type="submit" id="update" name="update" value="update" formnovalidate />
+                
+            </div>
+           
+                
+                
+                 </form>
+                </section>
+ 
+                
+                
+       <script>
+        var btn=document.getElementById('submit');
+        btn.onclick=function(e){
+            var bool=checkValidity();
+            if(!bool){e.preventDefault();}};
+        function checkValidity()
+        {
+            var check=1;
+	var username=document.getElementById('username');
+    if(username.checkValidity)
+	{
+	document.getElementById("err").innerHTML=username.validationMessage;
+    if(username.validationMessage.toString().length!=0)check=0;
+
+
+	}
+    
+    
+    var mail=document.getElementById('mail');
+   
+    if(mail.checkValidity)
+	{
+	document.getElementById("error").innerHTML=mail.validationMessage;
+    if(mail.validationMessage.toString().length!=0)check=0;
+
+
+	}
+	 
+    var gender=document.getElementById('gender');
+
+	if(gender.checkValidity)
+	{
+	document.getElementById("err1").innerHTML =gender.validationMessage;
+    if(gender.validationMessage.toString().length!=0)check=0;
+
+	}
+            
+    	var age=document.getElementById('age');
+
+     if(age.checkValidity)
+	{
+	document.getElementById("err2").innerHTML=age.validationMessage;
+    if(age.validationMessage.toString().length!=0)check=0;
+    }
+            
+    var country=document.getElementById('country');
+    if(country.checkValidity)
+	{
+	document.getElementById("err3").innerHTML=country.validationMessage;
+    if(country.validationMessage.toString().length!=0)check=0;
+
+
+	}
+    
+    var feedback=document.getElementById('feedback');
+    if(feedback.checkValidity)
+	{
+	document.getElementById("err4").innerHTML=feedback.validationMessage;
+    if(feedback.validationMessage.toString().length!=0)check=0;
+        
+
+
+	}
+            if(check==0){return false;}
+            else return true;
+   
+	
+}
+
+
+</script>
+</body>
+</html>

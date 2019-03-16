@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Gallery</title>
+	<link rel="stylesheet" href="stylesGallery.css">
+	<link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    
+    
+    
+ <header>
+                <div id="branding">
+                    <h1><span class="highlight"> Event</span> Management </h1>
+                    </div>
+                <nav>
+                    <ul>
+                       <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+<a href="home.html">Home</a> 
+<a href="about.html">About Us</a> 
+<a href="events.html">Events</a> 
+<a href="eventreg.html">Register</a> 
+  <a href="gallery.html">Gallery</a> 
+    <a href="services.html">Services</a>  
+    <a href="contact.html">Feedback</a>  
+
+
+                       
+                    </ul>
+                </nav>
+                </div>
+               </header>
+        
+                      
+        
+       	<section>        
+  <div class="columns">
+      <img src="sports.jpg" style="width:100%" >
+        <img src="spowor.jpg" style="width:100%">
+        <img src="dance.jpg" style="width:100%" >
+      <img src="annual.jpg" style="width:100%" >
+      </div>
+    
+    </section>
+    
+    <section>        
+  <div class="columns">
+      <img src="gal.jpg" style="width:100%" >
+        <img src="event1.jpg" style="width:100%">
+        <img src="event2.jpg" style="width:100%" >
+      <img src="conf.jpg" style="width:100%" >
+    </div>
+    
+    </section>
+    
+    
+    <section>        
+  <div class="columns">
+     <img src="conf.jpg" style="width:100%" >
+        <img src="event1.jpg" style="width:100%">
+        <img src="event3.jpg" style="width:100%" >
+      <img src="gal.jpg" style="width:100%" >
+     </div>
+    
+    </section>
+    
+    <section>        
+  <div class="columns">
+     <img src="event3.jpg" style="width:100%" >
+        <img src="event.jpg" style="width:100%">
+        <img src="gal.jpg" style="width:100%" >
+        <img src="event1.jpg" style="width:100%" >
+
+     </div>
+    
+    </section>
+    
+    
+    <div id="Container_box" class="onclickimage" onclick="this.style.display='none'">
+      <div class="imgview">
+      <img id="image_view">     
+    </div>
+  </div>
+    
+<script>
+function onClick(element) {
+  document.getElementById("image_view").src = element.src;
+  document.getElementById("Container_box").style.display = "block";  
+}
+</script>
+    
+</body>
+</html>

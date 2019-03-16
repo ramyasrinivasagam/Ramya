@@ -1,0 +1,445 @@
+<html>
+<head>
+    <style>
+        body {
+  font: 18px/25px "Lucida Grande", Tahoma, Verdana, sans-serif;
+/*  color: #404040;*/
+/*  background: #0ca3d2;*/
+  background-image:url("bride.jpg");
+  
+}
+
+input {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px;
+  width: 200px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+
+input[type=submit] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.c1{
+    color: darkviolet;
+    font-size: 20px;
+    font-weight:bold;
+}
+#color{
+    color:darkviolet;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.errormessage{
+    color:red;
+}
+
+body{
+    font:15px/1.5 Arial,Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+    }
+    
+    ul{
+        margin:0;
+        padding:0;
+    }
+    
+    .button_1{
+        height:38px;
+        background:#a8491d;
+        border:0;
+        padding-left:20px;
+        padding-right:20px;
+        color:#ffffff;
+   
+    }
+    
+    .dark{
+        padding:15px;
+        background:#35424a;
+        color:#ffffff;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    header{
+        background:#35424a;
+        color:#ffffff;
+        padding-top:30px;
+        min-height:70px;
+        border-bottom:#a8491d 3px solid;
+        
+    }
+
+    header a{
+        color:#ffffff;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-size:16px;
+    }
+    
+    
+    header li{
+        float:left;
+        display:inline;
+        padding:0 20px 0 20px;
+    }
+    
+    header #branding{
+        float:left;
+    }
+    
+    header #branding h1{
+        margin:0;
+    }
+    
+    header nav{
+        float:right;
+        margin-top:10px;
+    }
+    
+    header .highlight, header .current a{
+        color:#a8491d;
+        font-weight:bold;
+    }
+    
+    header a:hover{
+        color:#cccccc;
+        font-weight:bold;
+    }
+    
+    #showcase{
+        min-height:400px;
+        background:url('event.jpg')no-repeat 0 400px;
+        text-align:center;
+        color:#ffffff;
+        
+    }
+    
+    #showcase h1{
+        margin-top:100px;
+        font-size:55px;
+        margin-bottom:10px;
+        
+    }
+    
+    #showcase p{
+        font-size:20px;
+        
+    }
+    
+    
+    #boxes{
+        margin-top:20px;
+        
+    }
+    
+    #boxes .box{
+        float:left;
+        text-align:center;
+        width:30%;
+        padding:10px;
+    }
+    
+    #boxes .box img{
+        width:90px;
+        
+    }
+    
+    aside#sidebar{
+        float:right;
+        width:30%;
+        margin-top:10px;
+    }
+    
+    aside#sidebar .quote input, aside#sidebar .quote textarea
+    {
+        width:90%;
+        padding:5px;
+        
+    }
+    
+    article#main-col{
+        float:left;
+        width:65%;
+    }
+    
+    ul#services li{
+        list-style:none;
+        padding:20px;
+        border:#cccccc solid 1px;
+        margin-bottom:5px;
+        background:white;
+    }
+    footer{
+        padding:20px;
+        margin-top:20px;
+        color:#ffffff;
+        background-color:#a8491d;
+        text-align:center;
+    }
+    
+    @media(max-width:768px){
+        
+        header#branding,
+        header nav,
+        header nav li,
+        #newsletter h1,
+        #newsletter form
+        #boxes .box,
+        article#main-col
+        aside#sidebar{
+            float:none;
+            text-align: center;
+            width:100%;
+        }
+        
+     header{
+            padding-bottom: 20px;
+        }
+        
+        #showcase h1{
+            margin-top:40px;
+        }
+        
+        
+          }
+
+          .a_sub{
+              align-items: center;
+          }
+          
+       .a_sub{
+Font-Size:20px!important;
+	float:center;
+	margin-left:30%;
+	text-align:center;
+	}
+	
+.logintext{	
+	Font-Size:20px!important;
+	float:center;
+	margin-left:10%;
+	text-align:center;
+	}
+	.errormessage{
+		color:red;
+		font-size:20px;
+        float:right!important;
+	}
+
+    </style>
+<meta charset="utf-8">
+
+</head>
+<body>
+    
+      <header>
+                <div id="branding">
+                    <h1><span class="highlight"> Event </span> Management </h1>
+                    </div>
+                <nav>
+                    <ul>
+
+                        <li> <a href="login.html">Login</a></li>
+                        <li class="current"> <a href="signup.html">Sign Up</a></li>
+
+                        <li> <a href="home.html">Home</a></li>
+                       <!-- <li> <a href="about.html">About Us</a></li>
+                        <li> <a href="events.html">Events</a></li>
+                        <li> <a href="eventreg.php">Register</a></li>
+                        <li> <a href="gallery.html">Gallery</a></li>
+                        <li> <a href="services.html">Services</a></li>
+                        <li> <a href="contact.php">Feedback</a></li>-->
+
+                       
+                    </ul>
+                </nav>
+               </header>
+        
+        
+      
+    
+   <div class="container">
+    <section id="content">
+       <section><center> 
+                   <h1 class="c1" align="center"> Sign Up </h1> <br>
+<form>            
+<table>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td id="color">
+Username : </td>
+<td>
+<input type="text" id="Username" name="Username" pattern="[a-z]{1,20}" required></td>
+</tr>
+    <tr>
+<td colspan="2" ><span id="err1" class="errormessage"></span><br></td>
+</tr>
+<tr>
+<td id="color"> Email Id: </td>
+<td><input type="email" name="email" id="email" required>
+</td>
+</tr>
+    <tr>
+<td colspan="2" ><span id="err2" class="errormessage"></span><br></td>
+</tr>
+<tr>
+<td id="color"> Password: </td>
+<td><input type="password" name="passwords" id="passwords" pattern="[0-9]{1,20}" required>
+</td>
+</tr>
+    <tr>
+<td colspan="2" ><span id="err3" class="errormessage"></span><br></td>
+</tr>
+<tr>
+<td id="color"> Confirm Password: </td>
+<td><input type="password"  id="cnpasswords" pattern="[0-9]{1,20}" required>
+</td>
+</tr>
+    <tr>
+<td colspan="2" ><span id="err4" class="errormessage"><br></span></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td colspan="2" > <input class="a_sub" type="submit" value="Sign Up" id="btnsubmit" name="btnsubmit" ></td>
+</tr>
+<tr>
+<td colspan="2" class="logintext"><p>Already have a account ?<a href="login.html" class="p_d2">Login here</a></p></td>
+</tr> 
+</table>   
+           </form>
+</center>                           
+</section>
+        
+     
+        <script>
+    var btns=document.getElementById('btnsubmit');
+    btns.onclick=function(e){
+        var bool=checkValidity();
+        if(!bool){e.preventDefault();}
+        var b=passwordcheck();
+        if(!b){e.preventDefault();}
+   
+    };
+        
+        
+    
+    
+    function checkValidity()
+    {
+        var check=1;
+        var name=document.getElementById('Username');
+        if(name.checkValidity)
+            {
+                document.getElementById('err1').innerHTML=name.validationMessage;
+                if(name.validationMessage.toString().length!=0)check=0;
+                
+    
+            }
+                var email=document.getElementById('email');
+
+        if(email.checkValidity)
+            {
+                document.getElementById('err2').innerHTML=email.validationMessage;
+                if(email.validationMessage.toString().length!=0)check=0;
+
+    
+            }
+                var pass=document.getElementById('passwords');
+
+        if(pass.checkValidity)
+            {
+                document.getElementById('err3').innerHTML=pass.validationMessage;
+                if(pass.validationMessage.toString().length!=0)check=0;
+
+    
+            }
+                var conpass=document.getElementById('cnpasswords');
+
+        if(conpass.checkValidity)
+            {
+                document.getElementById('err4').innerHTML=conpass.validationMessage;
+                if(conpass.validationMessage.toString().length!=0)check=0;
+            }
+        if(check==0)
+return false;
+        
+        else
+            return true;
+        
+        
+    
+            }
+        
+     
+        function passwordcheck()
+        {
+            var pass=document.getElementById('passwords');
+        var conpass=document.getElementById('cnpasswords');
+            if(pass.value!=conpass.value){
+            document.getElementById('err4').innerHTML="Password does not match";
+
+            }
+                    if(check==0)
+
+            return false;
+        
+        else
+            return true;
+        }
+        
+    
+    </script>
+        
+ </section>
+</div>
+</body>
+</html>
